@@ -29,4 +29,23 @@ public class GenericsProblemForMaximumTest {
         int result = max.getIntMaximum(10,20,30);
         Assert.assertEquals(30,result);
     }
+
+
+    @Test
+    public void given_MaxDoubleat_FirstPosition_Returns_True_Test() {
+        double result = max.getDoubleMaximum(10.55,6.5,8.5);
+        Assert.assertEquals(10.55, result, 0.001);
+    }
+
+    @Test
+    public void given_MaxDoubleat_SecondPosition_Returns_True_Test() {
+        double result = max.getDoubleMaximum(8.5,10.55,6.5);
+        Assert.assertEquals(10.55, result,0.001);
+    }
+
+    @Test
+    public void given_MaxDoubleat_ThirdPosition_Returns_True_Test() {
+        double result = max.getDoubleMaximum(8.5,6.5,10.55);
+        Assert.assertEquals(10.55,result,0.001);
+    }
 }
