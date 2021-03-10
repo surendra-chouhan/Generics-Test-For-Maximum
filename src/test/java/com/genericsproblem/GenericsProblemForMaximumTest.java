@@ -13,9 +13,9 @@ public class GenericsProblemForMaximumTest {
 
     @Test
     public void given_MultipleDoubles_as_Input_Returns_Maximum() {
-        GenericsProblemForMaximum<Double> max = new GenericsProblemForMaximum<>(50.00, 20.6, 10.0, 40.55, 30.5);
+        GenericsProblemForMaximum<Double> max = new GenericsProblemForMaximum<>(50.05, 20.6, 10.0, 40.55, 30.5);
         double result = max.getMaximum();
-        Assert.assertEquals(50.00, result, 0.001);
+        Assert.assertEquals(50.05, result, 0.001);
     }
 
     @Test

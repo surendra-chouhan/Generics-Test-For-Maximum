@@ -12,7 +12,15 @@ public class GenericsProblemForMaximum<T extends Comparable<T>> {
     }
 
     public <T extends Comparable<T>> T getMaximum(){
+        T max;
         Arrays.sort(values);
-        return (T) values[values.length - 1];
+        max = (T) values[values.length - 1];
+
+        printMaximum(max);
+        return max;
+    }
+
+    public static <T> void printMaximum(T max){
+        System.out.println("Maximum is : " + max);
     }
 }
